@@ -1,0 +1,65 @@
+#html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 233, 233);
+}
+
+#resetCont {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#state {
+    font-size: 20px;
+    font-style: bold;
+}
+
+#reset {
+    background-color: white;
+    font-size: 22px;
+    height: 40px;
+    width: 110px;
+}
+
+#reset:hover {
+    background-color: black;
+    color: white;
+    transition: all ease-in-out 0.06s;
+    border-color: white;
+}
+
+#separator {
+    min-width: 10px;
+    min-height: 100%;
+    background-color: black;
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+#playerBoard div, #computerBoard div {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#playerBoard, #computerBoard {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    margin: 20px;
+}
+
+#computerBoard div:hover {
+    cursor: pointer;
+}
